@@ -1,0 +1,305 @@
+body {
+  background-color: darkgray;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+header img,
+.texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header img {
+  object-fit: cover;
+  z-index: 1;
+}
+
+header > p,
+.texto {
+  z-index: 2;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.texto h1,
+.texto h2,
+.texto p {
+  color: white;
+  margin: 0 10px;
+}
+
+.texto h1 {
+  font-size: 90px;
+}
+
+.texto h2 {
+  font-size: 45px;
+}
+
+.texto p {
+  font-size: 28px;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+  font-size: 28px;
+  margin-top: 15px;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  z-index: 3;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 4px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+  color: orangered;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 60px;
+}
+
+.content-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.content-item img {
+  max-width: 400px;
+  height: auto;
+}
+
+.text-content,
+.texto-sobreNos {
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.text-content h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  z-index: 900;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+
+.texto-cardapio {
+  text-align: center; /* Centraliza todo o conteúdo dentro da seção */
+  font-size: 25px;
+}
+
+.texto-cardapio h1 {
+  text-align: center; /* Centraliza o título */
+}
+
+.texto-cardapio ul, 
+.texto-cardapio ol {
+  list-style-type: none; /* Remove marcadores das listas, se desejado */
+  padding: 0; /* Remove espaçamento interno */
+}
+
+.texto-cardapio ol li {
+  text-align: justify; /* Justifica o texto dos itens da lista */
+  font-size: 20px; /* Ajuste o valor conforme desejado */
+  max-width: 1100px; /* Largura máxima dos itens da lista */
+  margin: 0 auto; /* Centraliza cada item */
+}
+
+.texto-cardapio h3 {
+  text-decoration: underline; /* Adiciona sublinhado ao texto */
+}
+
+/* styles/styles.css */
+.form-h1 {
+  text-align: center; /* Centraliza todo o conteúdo dentro da seção */
+  font-size: 30px;
+  font-weight: bold;
+
+}
+/* Estilizando o formulário */
+form {
+  max-width: 1000px; /* Largura máxima do formulário */
+  margin: 20px auto; /* Centraliza o formulário na página */
+  padding: 20px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda do formulário */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #f9f9f9; /* Cor de fundo do formulário */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+label {
+  display: block; /* Faz o label ocupar toda a largura */
+  margin-bottom: 5px; /* Espaçamento abaixo do label */
+  font-weight: bold; /* Negrito para os labels */
+  font-size: 22px;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 15px; /* Espaçamento abaixo dos campos */
+  border: 1px solid #ccc; /* Borda dos campos de entrada */
+  border-radius: 4px; /* Bordas arredondadas dos campos */
+  box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px; /* Espaçamento à direita do checkbox */
+}
+
+.checkbox-button-container {
+  display: flex; /* Define o layout flexível */
+  align-items: center; /* Alinha verticalmente ao centro */
+  gap: 5px; /* Espaçamento horizontal entre os elementos */
+  margin-top: 10px; /* Espaçamento superior opcional */
+}
+
+.checkbox-button-container button {
+  margin-left: auto; /* Empurra o botão para a direita */
+  background-color: #000; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  padding: 10px 40px; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 4px; /* Bordas arredondadas do botão */
+  cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color:blue; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilizando o texto de observações */
+#observacoes {
+  height: 100px; /* Altura para o campo de observações */
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;  
+  text-align: center;
+  font-size: 17px;
+}
+
+.contato{
+  background-color:#000000;
+}
+
+.footer-container {
+  display: flex; /* Define o layout flexível para o container do rodapé */
+  justify-content: space-between; /* Distribui o espaço igualmente entre os elementos filhos do container */
+  align-items: center; /* Alinha os elementos filhos verticalmente ao centro */
+  max-width: 1100px; /* Define uma largura máxima de 1300 pixels para o container */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  flex-wrap: wrap; /* Permite que os elementos filhos sejam quebrados em múltiplas linhas, se necessário */
+  gap: 10px; /* Adiciona um espaçamento de 10 pixels entre as divs */
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1; /* Define que cada seção ocupa uma parte igual do espaço disponível */
+  margin: 0; /* Remove qualquer margem padrão */
+  padding: 10px; /* Adiciona um preenchimento de 10 pixels para dar um pequeno espaço interno */
+  text-align: center; /* Centraliza o conteúdo textualmente */
+}
+
+.footer-left img {
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  display: block; /* Define o tipo de exibição como bloco, para ocupar toda a linha */
+  width: 230px; /* Define a largura da imagem para ocupar menos espaço */
+  height: auto; /* Ajusta a altura proporcionalmente */
+}
+
+.social-media {
+  margin-top: 10px; /* Adiciona uma margem acima dos ícones de redes sociais */
+}
+
+.social-media a {
+  margin: 0 5px; /* Adiciona uma margem horizontal entre os links de redes sociais */
+  display: inline-block; /* Exibe os links em linha, mas permite definir largura e altura */
+}
+
+.social-media a img {
+  width: 40px; /* Define a largura da imagem dos ícones de redes sociais para um tamanho menor */
+  height: 40px; /* Define a altura dos ícones para um tamanho menor */
+}
+
+.footer-right, .footer-center {
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.footer-right h2, .footer-center h2 {
+  margin-top: 0; /* Remove a margem superior dos títulos */
+  margin-bottom: 10px; /* Define uma margem inferior para os títulos */
+}
+
+.footer-right p, .footer-center p {
+  margin: 0; /* Remove a margem dos parágrafos */
+  line-height: 1.5; /* Define o espaçamento entre linhas para melhorar a legibilidade */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Altera o layout para coluna em telas pequenas */
+    align-items: center; /* Centraliza os itens do container */
+    text-align: center; /* Centraliza o texto dentro do container */
+  }
+
+  .footer-right, .footer-center {
+    padding-left: 0; /* Remove o preenchimento à esquerda em telas pequenas */
+    margin-top: 10px; /* Adiciona uma margem superior para separar as seções */
+  }
+}
